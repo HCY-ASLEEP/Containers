@@ -28,6 +28,7 @@ RUN SYSTEM_START_DIR="/opt/system-init/" \
     && echo '#!/bin/bash' > $SYSTEM_START_SCRIPT \
     && echo '/etc/init.d/ssh start >/dev/null 2>&1' >> $SYSTEM_START_SCRIPT \
     && echo '/etc/init.d/dbus start >/dev/null 2>&1' >> $SYSTEM_START_SCRIPT \
+    && echo 'nohup fcitx5 restart > /dev/null 2>&1 &' >> $SYSTEM_START_SCRIPT \
     && chmod a+x $SYSTEM_START_SCRIPT \
     && echo "${SYSTEM_START_SCRIPT}" >> /etc/bash.bashrc
 
