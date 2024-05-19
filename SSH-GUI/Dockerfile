@@ -1,4 +1,5 @@
 # 在 ssh -Y 的情况下可以使用GUI
+# 安装启动 dbus 是使用 GUI 的关键所在
 # 使用 Ubuntu 的最新 LTS 版本作为基础镜像
 FROM ubuntu:latest
 
