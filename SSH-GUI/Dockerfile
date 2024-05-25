@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # 更新包索引并安装所需的软件包
 RUN apt update && apt upgrade -y \
-    && apt install -y dbus-x11 fcitx5 fcitx5-chinese-addons locales mousepad openssh-server vim wget curl fonts-wqy-microhei fonts-wqy-zenhei xfonts-wqy sudo tmux iproute2 apt-transport-https ca-certificates
+    && apt install -y dbus-x11 fcitx5 fcitx5-chinese-addons locales mousepad openssh-server vim wget curl fonts-wqy-microhei fonts-wqy-zenhei xfonts-wqy sudo tmux iproute2 apt-transport-https ca-certificates xclip
 
 # 配置用户名和其密码
 RUN USERNAME="test" \
